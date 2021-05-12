@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rookasrudzianskas/Zoom-Clone/issues"
   },
-  "homepage": "https://github.com/rookasrudzianskas/Zoom-Clone#readme"
+  "homepage": "https://github.com/rookasrudzianskas/Zoom-Clone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
