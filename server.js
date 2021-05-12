@@ -1,23 +1,16 @@
-const express = require('express')
-const app = express()
-const port = 3030
+const express = require('express');
+const app = express();
+const port = 3030;
+
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.status(200).send('Hello World!')
+    res.render('room');
 })
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
 
-// const express = require('express');
-// const app = express();
-// const server = require('https').Server(app);
-//
-// app.get('/', (req, res) => {
-//     res.status(200).send("Hello World, Rokas 🚀")
-// })
-//
-// server.listen(3030);
-//
+
 
