@@ -1,5 +1,4 @@
 
-
 const videoGrid = document.getElementById('video-grid');
 const myVideo = document.createElement('video');
 // my own video must be muted

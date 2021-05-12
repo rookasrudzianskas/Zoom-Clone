@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3030;
 const { v4: uuidv4 } = require('uuid');
-
+const io = require('socket.io')(server) // specifying out server
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
 app.use(express.static(__dirname + '/public'));
@@ -19,7 +19,10 @@ app.get('/:room', (req, res) => {
     res.render('room', {roomId: req.params.room})
 })
 
+// then we enter the website, it means, then we enter, and start the video, the socket is going to turn on
+io.on('connection', socket => {
 
+})
 
 
 app.listen(port, () => {
